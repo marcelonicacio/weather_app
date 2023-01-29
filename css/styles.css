@@ -2,16 +2,16 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
 body {
- 
+ background-image: url('https://images.unsplash.com/photo-1478860409698-8707f313ee8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80');
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-
   background-position: center;
   background-size: cover;
 }
@@ -21,10 +21,11 @@ body {
 }
 
 .container {
-  background: linear-gradient(-90deg, rgb(90, 161, 182) 0%, #15b8cd 100%);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: linear-gradient(90deg, #97A4A4 0%, #7FA4A3 100%);
+  box-shadow: rgba(0, 0, 0, 0.24) 10px 13px 18px;
   padding: 2rem;
-  color: #fdfdfd;
+  color: black;
+  border: black solid transparent;
   border-radius: 1rem;
   max-width: 400px;
 }
@@ -49,7 +50,7 @@ body {
   padding: 0.8rem;
   min-width: 50px;
   margin-left: 8px;
-  background-color: #0c4157;
+  background-color: #167C7D;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -65,6 +66,10 @@ body {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   text-align: center;
+}
+
+#country {
+height: 20px;
 }
 
 #weather-data h2 {
@@ -86,9 +91,7 @@ body {
   font-size: 4rem;
 }
 
-#country {
-  height: 15px;
-}
+
 
 #description-container {
   display: flex;
@@ -136,16 +139,38 @@ body {
   min-width: 150px;
   margin: 0.8rem;
   padding: 0.6rem 0.9rem;
-  border-radius: 10rem;
+  border-radius: 0.3rem;
   border: none;
-  background-color: #8dd0f5;
-  color: #fff;
+  background-color: #CECDCB;
+  color: rgb(42, 39, 39);
   cursor: pointer;
   font-weight: bold;
-  opacity: 0.8;
   transition: 0.4s;
+  opacity: 0.7;
+  box-shadow: rgba(0, 0, 0, 0.361) 1px 1px 5px;
 }
 
 #suggestions button:hover {
   opacity: 1;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #167C7D;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 1.6rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  opacity: .9;
+  gap: .5rem;
+}
+
+.footer i {
+  cursor: pointer;
+  font-size: 1.2rem;
 }
